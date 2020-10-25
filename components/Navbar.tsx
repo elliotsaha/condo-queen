@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
-import styles from "./styles/Navbar.module.css";
+import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
-import { useRouter } from "next/router";
+
 import { useTheme } from "@material-ui/core/styles";
 import BookRoundedIcon from "@material-ui/icons/BookRounded";
 import InfoRoundedIcon from "@material-ui/icons/InfoRounded";
@@ -22,7 +22,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Divider } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import classes from "./styles/Navbar.module.css";
+
 
 export default function Navbar() {
   const theme = useTheme();
