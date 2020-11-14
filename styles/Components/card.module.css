@@ -1,0 +1,35 @@
+.cardContainer {
+    position: relative;
+    z-index: 1;
+  }
+  .cardFlex {
+    display: flex;
+  }
+  .cardImage {
+    object-fit: cover;
+    filter: brightness(75%);
+    width: 25rem;
+    height: 15rem;
+    margin-bottom: -0.3rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .cardImageRoot {
+    position: relative;
+  }
+  .cardImageHeader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: Roboto Slab, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+  .cardParagraph {
+    width: 25rem;
+    padding: 1rem;
+    background-color: white;
+  }
