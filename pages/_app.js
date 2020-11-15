@@ -3,7 +3,7 @@ import Head from "next/head";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Navbar from "../components/Navbar";
 import { StylesProvider } from '@material-ui/core/styles';
-
+import "../styles/MUITextFields.css"
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 

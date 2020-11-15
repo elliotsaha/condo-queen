@@ -1,0 +1,48 @@
+.Mui-focused {
+  color: #ceb095!important;
+  font-family: Roboto Slab, sans-serif;
+  font-weight: bold;
+}
+.MuiOutlinedInput-notchedOutline {
+  color: #ceb095;
+}
+.MuiInput-underline:after {
+  border-bottom-color: #ceb095;
+}
+.MuiOutlinedInput-root fieldset {
+  width: 29rem;
+}
+.MuiInputBase-root {
+    color: #ceb095
+}
+.MuiOutlinedInput-root .Mui-focused fieldset {
+  border-color: #ceb095;
+  border-width: 0.2rem;
+}
+.MuiOutlinedInput-root:hover fieldset {
+  border-color: #ceb095!important;
+  border-width: 0.2rem;
+}
+  
+.MuiInput-underline:after {
+  border-bottom-color: #ceb095;
+}
+
+.MuiOutlinedInput-root {
+  width: 29rem;
+}
+
+.MuiOutlinedInput-root fieldset {
+  border-color: #ceb095!important;
+  border-width: 0.2rem;
+  color: #ceb095;
+}
+
+.MuiOutlinedInput-root:hover fieldset {
+  border-color: #ceb095;
+  border-width: 0.2rem;
+}
+.MuiOutlinedInput-root .Mui-focused fieldset {
+  border-color: #ceb095;
+  border-width: 0.2rem;
+}
