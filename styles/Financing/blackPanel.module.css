@@ -1,0 +1,23 @@
+.paragraphContainer {
+    background-color: black;
+    color: white;
+}
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+}
+.crown {
+    width: 5rem;
+    padding-top: 1.5rem;
+}
+.paragraph {
+    text-align: center;
+    font-family: Roboto Slab, sans-serif;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    padding-bottom: 1.5rem;
+}
