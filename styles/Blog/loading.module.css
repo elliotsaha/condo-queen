@@ -1,0 +1,12 @@
+.root {
+    height: 15rem;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -3rem;
+}
+.container {
+    max-width: 65rem;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -21,12 +21,15 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-jss": "^10.4.0",
+    "react-paginate": "^6.5.0",
     "request": "^2.88.2",
     "urllib": "^2.36.1",
     "vercel": "^20.1.2",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
-    "@types/react": "^16.9.53"
+    "@types/react": "^16.9.53",
+    "contentful-cli": "^1.4.51",
+    "contentful-migration": "^2.0.7"
   }
 }
