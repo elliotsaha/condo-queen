@@ -1,20 +1,18 @@
 export {};
-import { createClient } from "contentful";
 require("dotenv").config();
+const axios = require("axios");
 
-const client = createClient({
-  space: process.env.CONTENTFUL_SPACE,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-});
-
-export default (req, res) => {
-  client
-    .getEntries({
-      content_type: "post",
-      "fields.slug[in]": req.body.slug,
-    })
+export default async (req, res) => {
+  axios
+    .get(
+      `https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE}/entries?content_type=${process.env.CONTENTFUL_CONTENT_TYPE}&access_token=${process.env.CONTENTFUL_ACCESS_TOKEN}&fields.slug=${req.body.slug}`
+    )
     .then((data) => {
-      res.send(data);
+      res.send(data)
+      console.log(data)
     })
-    .catch((err) => res.send(err));
+    .catch((err) => {
+      res.send(err)
+      console.log(err)
+    });
 };
