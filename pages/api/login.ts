@@ -1,6 +1,7 @@
 export {};
 require("dotenv").config();
 var request = require("request");
+import Cookies from 'cookies'
 var parseString = require("xml2js").parseString;
 
 var options = {
@@ -11,14 +12,15 @@ var options = {
     sendImmediately: false,
   },
 };
+
 export default (req, res) => {
   request(options, function (error, response, body) {
     if (error) {
       res.json(error)
-    } else {
-      parseString(response.body, function (err, result) {
-        res.json(result);
-      });
+    } else { //  Gets session id
+      // res.cookie(response.headers["set-cookie"][1])
+      Cookies.set("name", "value")
+      res.send("")
     }
   });
 };

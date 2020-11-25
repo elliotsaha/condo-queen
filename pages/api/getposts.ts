@@ -9,6 +9,6 @@ const client = createClient({
 
 export default (req, res) => {
   client.getEntries({ content_type: "post" }).then((data) => {
-    res.send(data)
-  }).catch(err => res.send(err))
+    res.status(200).send(data)
+  }).catch(err => res.status(400).send(err))
 };
