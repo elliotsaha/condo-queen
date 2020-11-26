@@ -1,0 +1,15 @@
+.main {
+  background-color: whitesmoke;
+}
+.root {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gilroy, sans-serif;
+}
+.inner {
+  max-width: 55rem;
+  margin: 2rem;
+}
+
